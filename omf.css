@@ -1,0 +1,37 @@
+/*Font*/
+
+@font-face{ 
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Shrikhand', cursive;
+ }
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+#footerlogo{
+    color: white;
+    font-family: 'Shrikhand', cursive;
+    margin: 0em 2em 0.5em 0em;
+    font-size: 180%;
+}
+
+footer{
+    background-color: #353535;
+    color: white;
+    margin: 0em -1em -1em -1em;
+    padding: 1em 2em 2em 2em;
+}
+
+.navfooter{
+    font-family: 'Roboto', sans-serif;
+    margin-top: 0.9em;
+}
+
+
+
