@@ -23,18 +23,21 @@ a{
     background-color:#eaeaea;
     color: black;
     box-shadow: -5px 3px 10px #cecece inset;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 #ville{
     text-align: center;
-    margin-top: -1em;
     font-family: 'Roboto',sans-serif;
     font-size: 1.2em;
     color: black;
 }
 
 #MapMarker{
-    margin-left: 40%;
+    align-items: center;
+    padding-right: 4em;
 }
 
 #ContExplorer{
@@ -49,16 +52,76 @@ a{
 }
 
 #Explorer{
-    border: 1px black solid;
+    border: 1px transparent;
+    box-shadow: 7px 7px 10px #cecece;
+    display: flex;
+    flex-wrap: wrap;
     border-radius: 15em;
+    font-family: 'Roboto', sans-serif;
+    color: white;
     padding: 1em;
     text-align: center;
     margin-bottom: 3em;
     margin-top: -6em;
-    width: 17%;
+    width: 27%;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
+}
+
+#Fonctionnement{
+    font-family: 'Roboto', sans-serif;
+    margin-left: 1em;
+    margin-top: 4em;
+}
+
+.ContFonction{
+    border: 1px solid white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navfonction{
+    display: block;
+    display: flex;
+    align-items: baseline;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    background-color: #f6f6f6;
+    border-radius: 11em;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
 }
+
+.number{
+    border-radius: 50%;
+    width: 19px;
+    height: 19px;
+    padding: 2px;
+    margin-left: -0.5em;
+    background-color: #9356DC;
+    color: white;
+    border: 2px solid #9356DC;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.iconfonction{
+    color: #7e7e7e;
+    margin-left: 1em;
+}
+
+.menufonction{
+    font-family: 'Roboto', sans-serif;
+    margin-left: 1.5em;
+}
+
+
 
 footer a{
     text-decoration: none;
