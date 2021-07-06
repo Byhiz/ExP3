@@ -19,7 +19,6 @@ a{
 #ContLoc{
     border: 1px #eaeaea solid;
     padding: 1em 1em;
-    background-color:;
     width: 100%;
     background-color:#eaeaea;
     color: black;
@@ -36,6 +35,29 @@ a{
 
 #MapMarker{
     margin-left: 40%;
+}
+
+#ContExplorer{
+    border: 1px #f6f6f6 solid;
+    font-family: 'Roboto', sans-serif;
+    padding: 3em 3em;
+    padding-bottom: 7em;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#Explorer{
+    border: 1px black solid;
+    border-radius: 15em;
+    padding: 1em;
+    text-align: center;
+    margin-bottom: 3em;
+    margin-top: -6em;
+    width: 17%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 footer a{
