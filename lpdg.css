@@ -17,7 +17,6 @@ body{
 header{
     box-shadow: 0 0 0.5rem rgb(0 0 0 / 25%);
     width: 100%;
-    min-width: 320px;
     padding: 19px 0;
     padding-top: 2em;
 }
@@ -48,13 +47,17 @@ header i{
     margin-left: 1em;
 }
 
+#menu__titre i{
+    margin-top: 0.50em;
+}
+
 #menu{
     background-color: #f6f6f6;
     border-radius: 35px 35px 0px 0px;
     margin-top: -6em;
-    position: absolute;
-    width: 98.8%;
-    ;
+    position: relative;
+    width: 100%;
+    padding-bottom: 2em;
 }
 
 .minicartes{
@@ -100,10 +103,10 @@ header i{
 footer{
     background-color: #353535;
     position: absolute;
-    width: 96.5%;
+    width: 96%;
     color: white;
     padding: 15px;
-    margin-top: 40em;
+    margin-top: em;
 }
 
 a{
@@ -133,18 +136,61 @@ a{
 }
 
 #menu__command{
-    position: absolute;
     border: 1px transparent;
     box-shadow: 7px 7px 10px #cecece;
     display: flex;
-    flex-wrap: wrap;
     border-radius: 15em;
     font-family: 'Roboto', sans-serif;
     color: white;
     justify-content: center;
-    width: 250px;
+    width: 7em;
     padding: 1em;
-    margin-bottom: 2em;
     margin-top: 2em;
+    margin-left: 45%;
     background-image: linear-gradient(to right bottom, #FF79DA, #9356DC);
+}
+
+/* Media Query mobile avec 768px < W < 1024px */
+
+@media screen and (max-width: 768px){
+    footer{
+        width: 88%;
+    }
+
+    .food{
+        width: 90%;
+    }
+
+    .food p{
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 80%;
+        font-size: 1em;
+    }
+
+    #menu__command{
+        margin-left: 7em;
+    }
+    
+    .prix{
+        margin-right: 1em;
+        margin-top: 2em;
+    }
+}
+
+/* Media Query tablette avec 768px < W < 1024px */
+
+@media  screen and (min-width: 768px) and (max-width:  1023px){
+    #menu__command{
+        margin-left: 300px;
+    }
+
+    footer{
+        width: 94%;
+    }
+
+    .categorie{
+        margin-top: 1em;
+    }
 }

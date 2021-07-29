@@ -48,7 +48,7 @@ header{
     text-align: center;
     margin-top: 2em ;
   }
-.propos  p {
+.propos p {
     color: #4d4d4d;
     text-align: center;
   }
@@ -83,6 +83,7 @@ header{
     font-family: "Roboto", sans-serif;
     width: 100%;
     margin-top: 3em;
+    margin-left: 5em;
 }
 
 .navfonction{
@@ -241,10 +242,11 @@ a{
         flex-wrap: wrap;
         width: 90%;
         margin-bottom: -1em;
+        margin-left: 1em;
     }
 
     .navfonction{
-        width: 99%;
+        width: 90%;
         margin-left: 1em;
     }
 }
@@ -254,7 +256,7 @@ a{
 @media  screen and (min-width: 768px) and (max-width:  1023px){
 
     .card{
-        width: 96%;
+        width: 91%;
     }
 
     footer{
@@ -262,7 +264,11 @@ a{
     }
 
     .navfonction{
-        width: 99%;
-        margin-left: 2em;
+        width: 90%;
+        margin-right: 3em;
+    }
+
+    #ContFonction{
+        margin-left: 3em;
     }
 }
