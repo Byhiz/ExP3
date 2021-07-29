@@ -114,6 +114,10 @@ a{
     color: white;
 }
 
+header a{
+    color: black;
+}
+
 #footerlogo{
     font-family: "Shrikhand", cursive;
     font-size: 20px;
