@@ -32,7 +32,7 @@ header i{
  font-size: 1.5em;
 }
 
-.restopic img{
+.carte__pic img{
     width: 100%;
     height: 25em;
     position: relative;
@@ -60,12 +60,12 @@ header i{
     padding-bottom: 2em;
 }
 
-.minicartes{
+.minicard{
     display: flex;
     flex-direction: column;
 }
 
-.food{
+.minicard__food{
     display: flex;
     justify-content: space-between;
     border: 1px solid #f6f6f6;
@@ -85,10 +85,43 @@ header i{
     font-size: 1.3em;
 }
 
-.prix{
+.minicard__food--prix{
     margin-right: 2em;
     margin-top: 1.5em;
     font-size: 1.1em;
+}
+
+.minicard__food:hover i{
+    transform: rotate(360deg);
+    transition-duration: 1s;
+}
+
+.check{
+    background-color: #99e2d0;
+    margin: 0px 3px 0px 0px;
+    border-radius: 0px 15px 15px 0px;
+    width: 70px;
+    align-items: center;
+    display:flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.50em;
+    opacity: 0;
+}
+
+.minicard__food:hover .check {
+    transform: translate(50px,0px);
+    animation: move 1s 1;
+    transition-duration: 1s;
+    opacity: 1;
+}
+
+@keyframes check{
+    transform: translate(100px);}
+
+@keyframes move{
+    from{transform: translateX(65px);}
+    to{transform: translateX(0px);}
 }
 
 .line {
@@ -154,6 +187,13 @@ header a{
     background-image: linear-gradient(to right bottom, #FF79DA, #9356DC);
 }
 
+#menu__command:hover{
+    box-shadow: 9px 9px 20px #353535;
+    opacity: 0.85;
+}
+
+.minicard__food:hover
+
 /* Media Query mobile avec 768px < W < 1024px */
 
 @media screen and (max-width: 768px){
@@ -161,11 +201,11 @@ header a{
         width: 88%;
     }
 
-    .food{
+    .minicard__food{
         width: 90%;
     }
 
-    .food p{
+    .minicard__food p{
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
@@ -177,7 +217,7 @@ header a{
         margin-left: 7em;
     }
     
-    .prix{
+    .minicard__food--prix{
         margin-right: 1em;
         margin-top: 2em;
     }

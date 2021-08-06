@@ -52,7 +52,7 @@ header{
     text-align: center;
   }
   
-.btn__propos{
+.propos__btn{
     border: 1px transparent;
     box-shadow: 7px 7px 10px #cecece;
     display: flex;
@@ -76,7 +76,7 @@ header{
     margin-top: 50px;
 }
 
-#ContFonction{
+#Fonctionnement__cont{
     border: 1px solid white;
     display: flex;
     font-family: "Roboto", sans-serif;
@@ -85,7 +85,7 @@ header{
     justify-content: space-between;
 }
 
-.navfonction{
+.Fonctionnement__cont--nav{
     display: flex;
     align-items: center;
     background-color: #f6f6f6;
@@ -141,7 +141,7 @@ header{
     width: 100%;
 }
 
-.btn__card {
+.card__btn {
     color: #008766;
     background: #99e2d0;
     border: 1px transparent ;
@@ -171,7 +171,7 @@ header{
     height: 70%;
   }
 
-.heart h4{
+.card__heart h4{
     color: black;
     font-family: "Roboto", sans-serif;
     margin-right: 3em;  
@@ -179,7 +179,7 @@ header{
     margin-top: -7px;
 }
 
-.heart p{
+.card__heart p{
     color: black;
     margin-top: -7px;
 }
@@ -217,7 +217,7 @@ a{
     color: #fff;
 }
 
-#footerlogo{
+#footer__logo{
     font-family: "Shrikhand", cursive;
     font-size: 20px;
     margin-top: 15px;
