@@ -75,7 +75,8 @@ header i{
     box-shadow: 0px 5px 10px #353535;
     width: 97%;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
+    overflow: hidden;
 }
 
 .categorie{
@@ -90,6 +91,44 @@ header i{
     margin-top: 1.5em;
     font-size: 1.1em;
 }
+
+.space{
+    display: flex;
+}
+
+.minicard__food:hover i{
+    transform: rotate(360deg);
+    transition-duration: 1s;
+}
+
+.check{
+    background-color: #99e2d0;
+    margin: 0px 3px 0px 0px;
+    border-radius: 0px 15px 15px 0px;
+    width: 70px;
+    align-items: center;
+    display:flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.50em;
+    margin-right: -70px;
+}
+
+.minicard__food:hover .check {
+    transform: translate(50px,0px);
+    animation: move 1s forwards 1;
+    transition-duration: 1s;
+    margin-right: 0px;
+}
+
+@keyframes check{
+    transform: translate(100px);}
+
+@keyframes move{
+    from{transform: translateX(65px);}
+    to{transform: translateX(5px);}
+}
+
 
 .line {
     height: 2px;

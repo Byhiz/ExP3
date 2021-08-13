@@ -75,7 +75,8 @@ header i{
     box-shadow: 0px 5px 10px #353535;
     width: 97%;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
+    overflow: hidden;
 }
 
 .categorie{
@@ -89,6 +90,10 @@ header i{
     margin-right: 2em;
     margin-top: 1.5em;
     font-size: 1.1em;
+}
+
+.space{
+    display: flex;
 }
 
 .minicard__food:hover i{
@@ -106,14 +111,14 @@ header i{
     justify-content: center;
     color: #fff;
     font-size: 1.50em;
-    opacity: 0;
+    margin-right: -70px;
 }
 
 .minicard__food:hover .check {
     transform: translate(50px,0px);
-    animation: move 1s 1;
+    animation: move 1s forwards 1;
     transition-duration: 1s;
-    opacity: 1;
+    margin-right: 0px;
 }
 
 @keyframes check{
@@ -121,7 +126,7 @@ header i{
 
 @keyframes move{
     from{transform: translateX(65px);}
-    to{transform: translateX(0px);}
+    to{transform: translateX(5px);}
 }
 
 .line {
