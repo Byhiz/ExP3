@@ -60,6 +60,43 @@ header i{
     padding-bottom: 2em;
 }
 
+@keyframes fadein {
+    0% {
+      opacity: 0;
+      transform: translateY(5px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+  .minicard {
+    animation-duration: 350ms;
+    animation-timing-function: linear;
+    animation-delay: 0.5s;
+    animation-direction: normal;
+    animation-name: fadein;
+    animation-fill-mode: backwards;
+  }
+
+  .minicard2 {
+    animation-duration: 350ms;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    animation-direction: normal;
+    animation-name: fadein;
+    animation-fill-mode: backwards;
+  }
+
+  .minicard3 {
+    animation-duration: 350ms;
+    animation-timing-function: linear;
+    animation-delay: 1.5s;
+    animation-direction: normal;
+    animation-name: fadein;
+    animation-fill-mode: backwards;
+  }
+
 .minicard{
     display: flex;
     flex-direction: column;
@@ -79,7 +116,7 @@ header i{
     overflow: hidden;
 }
 
-.categorie{
+.categorie1, .categorie2, .categorie3 {
     margin-top: 2em;
     margin-bottom: 1em;
     margin-left: 9px;

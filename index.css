@@ -280,13 +280,25 @@ header{
 }
 
 .fill__heart i:hover{
-    transform: scale(1.3);
+    transform: scale(0.1);
     background: -webkit-linear-gradient(#FF79DA, #9356DC);
-    transition: transform 4000ms;
+    transition: transform 3000ms;
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+    font-weight: bold;
+    animation: fadeinc 3s;
 }
+
+@keyframes fadeinc {
+    0% {
+      transform: scale(0);
+    
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
 
 footer{
     background-color: #353535;
