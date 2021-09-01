@@ -234,6 +234,7 @@ header a{
     width: 7em;
     padding: 1em;
     margin-top: 2em;
+    margin-bottom: 2em;
     margin-left: 45%;
     background-image: linear-gradient(to right bottom, #FF79DA, #9356DC);
 }
