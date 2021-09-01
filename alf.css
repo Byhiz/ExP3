@@ -162,9 +162,6 @@ header i{
     margin-right: 0px;
 }
 
-@keyframes check{
-    transform: translate(100px);}
-
 @keyframes move{
     from{transform: translateX(65px);}
     to{transform: translateX(5px);}
@@ -190,7 +187,6 @@ footer{
     width: 96%;
     color: white;
     padding: 15px;
-    margin-top: em;
 }
 
 a{
