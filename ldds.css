@@ -36,6 +36,7 @@ header i{
     width: 100%;
     height: 25em;
     position: relative;
+    object-fit: cover;
 }
 
 #menu__titre{
@@ -64,6 +65,44 @@ header i{
     display: flex;
     flex-direction: column;
 }
+
+.minicard {
+    animation-duration: 350ms;
+    animation-timing-function: linear;
+    animation-delay: 0.5s;
+    animation-direction: normal;
+    animation-name: fadein;
+    animation-fill-mode: backwards;
+  }
+
+  .minicard2 {
+    animation-duration: 350ms;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    animation-direction: normal;
+    animation-name: fadein;
+    animation-fill-mode: backwards;
+  }
+
+  .minicard3 {
+    animation-duration: 350ms;
+    animation-timing-function: linear;
+    animation-delay: 1.5s;
+    animation-direction: normal;
+    animation-name: fadein;
+    animation-fill-mode: backwards;
+  }
+
+  @keyframes fadein {
+    0% {
+      opacity: 0;
+      transform: translateY(5px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
 
 .minicard__food{
     display: flex;
@@ -112,6 +151,8 @@ header i{
     color: #fff;
     font-size: 1.50em;
     margin-right: -70px;
+    animation: moveback 1s forwards;
+    transition-duration: 1s;
 }
 
 .minicard__food:hover .check {
@@ -129,6 +170,10 @@ header i{
     to{transform: translateX(5px);}
 }
 
+@keyframes moveback {
+    from{transform: translateX(5px);}
+    to{transform: translateX(65px);}
+}
 
 .line {
     height: 2px;
