@@ -167,19 +167,7 @@ header i{
     to{transform: translateX(5px);}
 }
 
-@keyframes moveback {
-    from{transform: translateX(5px);}
-    to{transform: translateX(65px);}
-}
 
-.line {
-    height: 2px;
-    width: 50px;
-    background-color: #99e2d0;
-    margin-left: 9px;
-    margin-top: -1.3em;
-    margin-bottom: 1em;
-}
 
 footer{
     background-color: #353535;
